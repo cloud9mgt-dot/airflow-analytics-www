@@ -40,25 +40,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-            {/* Left: what to expect */}
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-900">What to expect</h2>
-              <div className="space-y-6">
-                {STEPS.map(({ icon: Icon, title, desc }, i) => (
-                  <div key={i} className="flex items-start gap-4">
-                    <div className="w-9 h-9 bg-blue-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                      <Icon className="h-4 w-4 text-blue-600" />
-                    </div>
-                    <div className="space-y-1">
-                      <p className="text-sm font-semibold text-gray-900">{title}</p>
-                      <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right: contact info */}
+            {/* Left: contact info */}
             <div className="space-y-8 pt-2">
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold text-gray-900">Reach us directly</h2>
@@ -94,6 +76,24 @@ export default function ContactPage() {
                   Check out our <a href="/videos" className="underline hover:text-blue-900">demo videos</a> to get
                   a feel for the platform before reaching out.
                 </p>
+              </div>
+            </div>
+
+            {/* Right: what to expect */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold text-gray-900">What to expect</h2>
+              <div className="space-y-6">
+                {STEPS.map(({ icon: Icon, title, desc }, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-9 h-9 bg-blue-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                      <Icon className="h-4 w-4 text-blue-600" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-gray-900">{title}</p>
+                      <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
