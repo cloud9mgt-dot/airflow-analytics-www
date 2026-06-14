@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BarChart3, PlaneTakeoff, FileText, ScanLine, Users, Moon } from "lucide-react";
 
 const FEATURES = [
@@ -30,6 +31,9 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-[#0f1623] text-white">
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-36 text-center space-y-8">
+          <div className="flex justify-center">
+            <Image src="/Logo.png" alt="Airflow Analytics" width={280} height={84} className="h-20 w-auto object-contain" />
+          </div>
           <div className="inline-flex items-center gap-2 bg-blue-600/20 text-blue-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-500/30 uppercase tracking-wider">
             Private Aviation Management
           </div>
@@ -38,7 +42,7 @@ export default function HomePage() {
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
             Airflow Analytics is a concierge reporting platform for private aircraft owners and management companies.
-            Real-time expense tracking, automated invoice reconciliation, and AI-powered receipt matching — built specifically for private aviation.
+            Expense tracking, automated invoice reconciliation, and AI-powered receipt matching — built specifically for private aviation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
             <Link href="/contact"

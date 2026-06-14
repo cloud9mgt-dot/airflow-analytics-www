@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, Clock, PlaneTakeoff } from "lucide-react";
 
 export default function ContactPage() {
@@ -6,6 +7,9 @@ export default function ContactPage() {
       {/* Header */}
       <section className="bg-[#0f1623] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-4">
+          <div className="flex justify-center pb-2">
+            <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold">Let's talk.</h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
             Ready to see Airflow Analytics in action? Tell us about your operation and we'll set up a personalized walkthrough.

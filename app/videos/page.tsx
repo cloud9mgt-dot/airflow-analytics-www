@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Video, Calendar, PlayCircle } from "lucide-react";
 
 export default function VideosPage() {
@@ -7,6 +8,9 @@ export default function VideosPage() {
       {/* Header */}
       <section className="bg-[#0f1623] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-4">
+          <div className="flex justify-center pb-2">
+            <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold">See it in action.</h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
             Watch a walkthrough of Airflow Analytics and see how it works for real aircraft management operations.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   BarChart3, PlaneTakeoff, FileText, ScanLine,
   Users, LayoutDashboard, Calendar, Receipt, Moon, Shield,
@@ -58,6 +59,9 @@ export default function FeaturesPage() {
       {/* Header */}
       <section className="bg-[#0f1623] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-4">
+          <div className="flex justify-center pb-2">
+            <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold">Built for private aviation. Full stop.</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             Every feature exists because aircraft management companies needed it — not because a generic platform happened to have it.
