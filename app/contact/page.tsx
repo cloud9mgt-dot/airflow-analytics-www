@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="flex justify-center pb-2">
             <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">Let's talk.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">Let's talk</h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
             Ready to see Airflow Analytics in action? Tell us about your operation and we'll set up a personalized walkthrough.
           </p>

@@ -62,7 +62,7 @@ export default function FeaturesPage() {
           <div className="flex justify-center pb-2">
             <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">Built for private aviation. Full stop.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">Built for private aviation. Full stop</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             Every feature exists because aircraft management companies needed it — not because a generic platform happened to have it.
           </p>

@@ -11,7 +11,7 @@ export default function VideosPage() {
           <div className="flex justify-center pb-2">
             <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">See it in action.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">See it in action</h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
             Watch a walkthrough of Airflow Analytics and see how it works for real aircraft management operations.
           </p>

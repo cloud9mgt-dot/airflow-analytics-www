@@ -23,7 +23,7 @@ export default function PricingPage() {
           <div className="flex justify-center pb-2">
             <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">Built around your operation.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">Built around your operation</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             No off-the-shelf tiers. Every engagement is scoped and priced to fit your specific fleet, reporting needs, and level of support.
           </p>
