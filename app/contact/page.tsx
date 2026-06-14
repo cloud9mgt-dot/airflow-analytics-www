@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-medium text-gray-900">What to include</p>
                     <p className="text-sm text-gray-500">
-                      Number of aircraft, what software you currently use for expense tracking, and what's not working.
+                      Number of aircraft, what software you currently use for expense tracking and aircraft scheduling, and what's not working.
                     </p>
                   </div>
                 </div>
