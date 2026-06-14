@@ -32,7 +32,7 @@ export default function HomePage() {
       <section className="bg-[#0f1623] text-white">
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-36 text-center space-y-8">
           <div className="flex justify-center">
-            <Image src="/Logo.png" alt="Airflow Analytics" width={280} height={84} className="h-20 w-auto object-contain" />
+            <Image src="/Logo.png" alt="Airflow Analytics" width={360} height={108} className="h-28 w-auto object-contain" />
           </div>
           <div className="inline-flex items-center gap-2 bg-blue-600/20 text-blue-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-500/30 uppercase tracking-wider">
             Private Aviation Management

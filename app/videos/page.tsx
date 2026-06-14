@@ -9,7 +9,7 @@ export default function VideosPage() {
       <section className="bg-[#0f1623] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-4">
           <div className="flex justify-center pb-2">
-            <Image src="/Logo.png" alt="Airflow Analytics" width={240} height={72} className="h-16 w-auto object-contain" />
+            <Image src="/Logo.png" alt="Airflow Analytics" width={320} height={96} className="h-24 w-auto object-contain" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold">See it in action</h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto">

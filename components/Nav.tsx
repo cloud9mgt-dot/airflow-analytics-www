@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const LINKS = [
@@ -18,8 +17,8 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-[#0f1623]/95 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image src="/Logo.png" alt="Airflow Analytics" width={160} height={48} className="h-10 w-auto object-contain" />
+        <Link href="/" className="flex items-center text-white font-semibold text-lg tracking-wide">
+          Airflow Analytics
         </Link>
 
         {/* Desktop nav */}
