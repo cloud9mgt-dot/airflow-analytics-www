@@ -1,5 +1,23 @@
 import Image from "next/image";
-import { Mail, Clock, PlaneTakeoff } from "lucide-react";
+import { Mail, Clock, PlaneTakeoff, MessageSquare, CalendarCheck, CheckCircle } from "lucide-react";
+
+const STEPS = [
+  {
+    icon: MessageSquare,
+    title: "You'll hear back within one business day",
+    desc: "We'll ask a few questions about your operation — number of aircraft, current tools, and what's frustrating you.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "We'll schedule a live walkthrough",
+    desc: "A 30-minute demo tailored to your aircraft and setup. We'll show you exactly what Airflow Analytics looks like for your operation.",
+  },
+  {
+    icon: CheckCircle,
+    title: "You decide if it's a fit",
+    desc: "No pressure, no contract until you're ready. If it's not the right fit, we'll tell you that too.",
+  },
+];
 
 export default function ContactPage() {
   return (
@@ -22,68 +40,28 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-            {/* Left: form */}
+            {/* Left: what to expect */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-900">Send us a message</h2>
-              <form
-                action="mailto:sales@airflow-analytics.com"
-                method="get"
-                encType="text/plain"
-                className="space-y-4"
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-1.5">
-                    <label className="text-sm font-medium text-gray-700" htmlFor="name">Name</label>
-                    <input
-                      id="name" name="name" type="text" required
-                      placeholder="Jane Smith"
-                      className="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
+              <h2 className="text-2xl font-bold text-gray-900">What to expect</h2>
+              <div className="space-y-6">
+                {STEPS.map(({ icon: Icon, title, desc }, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-9 h-9 bg-blue-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                      <Icon className="h-4 w-4 text-blue-600" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-gray-900">{title}</p>
+                      <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+                    </div>
                   </div>
-                  <div className="space-y-1.5">
-                    <label className="text-sm font-medium text-gray-700" htmlFor="company">Company</label>
-                    <input
-                      id="company" name="company" type="text"
-                      placeholder="Skyline Air LLC"
-                      className="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-1.5">
-                  <label className="text-sm font-medium text-gray-700" htmlFor="email">Email</label>
-                  <input
-                    id="email" name="email" type="email" required
-                    placeholder="jane@skylineair.com"
-                    className="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div className="space-y-1.5">
-                  <label className="text-sm font-medium text-gray-700" htmlFor="body">Message</label>
-                  <textarea
-                    id="body" name="body" rows={5} required
-                    placeholder="Tell us about your aircraft, current reporting setup, and what you're looking to improve..."
-                    className="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-md transition-colors text-sm"
-                >
-                  Send Message
-                </button>
-                <p className="text-xs text-gray-400 text-center">
-                  This will open your email client. You can also email us directly at{" "}
-                  <a href="mailto:sales@airflow-analytics.com" className="text-blue-600 hover:underline">
-                    sales@airflow-analytics.com
-                  </a>
-                </p>
-              </form>
+                ))}
+              </div>
             </div>
 
-            {/* Right: info */}
+            {/* Right: contact info */}
             <div className="space-y-8 pt-2">
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">Or reach us directly</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Reach us directly</h2>
                 <a href="mailto:sales@airflow-analytics.com"
                   className="flex items-center gap-3 text-blue-600 hover:text-blue-700 transition-colors">
                   <Mail className="h-5 w-5 shrink-0" />
